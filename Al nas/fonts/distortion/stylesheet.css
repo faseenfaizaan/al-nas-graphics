@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Distortion Dos Analogue';
+    src: url('DistortionDosAnalogue.woff2') format('woff2'),
+        url('DistortionDosAnalogue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

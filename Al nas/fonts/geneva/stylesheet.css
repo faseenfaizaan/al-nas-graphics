@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Geneva';
+    src: url('Geneva.woff2') format('woff2'),
+        url('Geneva.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

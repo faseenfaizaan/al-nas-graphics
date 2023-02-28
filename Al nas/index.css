@@ -1,0 +1,379 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1400px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'Geneva';
+    src: url('./fonts/geneva/Geneva.woff2') format('woff2'),
+        url('./fonts/geneva/Geneva.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Distortion Dos Analogue';
+    src: url('./fonts/distortion/DistortionDosAnalogue.woff2') format('woff2'),
+        url('./fonts/distortion/DistortionDosAnalogue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+#home{
+	height: 100vh;
+	font-family: 'Geneva';
+	color: #fff;
+	scroll-behavior: smooth;
+}
+#home div.bg{
+	background-image: url(./images/4blur.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+	width: 100%;
+	height: 100%;	
+}
+#home header{
+	font-size: 70px;
+	font-family: 'Distortion Dos Analogue';
+	text-transform: lo;
+
+}
+#home .head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5px;
+}
+#home .head nav.left{
+
+
+}
+#home .head nav.right{
+
+
+}
+#home .head nav.right ul{
+	display: flex;
+	align-items: center;
+
+}
+#home .head nav.right ul li{
+	margin-right: 20px;
+
+}
+#home .head nav.right ul li:last-child{
+	margin-right: 0px;
+
+}
+#home .head nav.right ul li a{
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+
+}
+#home .head nav.right ul li a.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+#home .head nav.right ul li a.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+#home .head nav.right ul li a.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#home .head nav.right ul li.button{
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	background: #24a0ed;
+}
+#home .spotlight{
+	padding-top: 200px;
+	text-align: center;
+}
+
+#home .spotlight p{
+	padding: 16px 0px 24px;
+	font-size: 14px;
+	color: #fff;
+	display: block;
+}
+#home .spotlight a.button{
+	color: #000;
+	padding: 6px 12px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #ffffff;
+	font-weight: bold;
+}
+#home .spotlight h1{
+	font-size: 80px;
+	animation: fade-in 5s;
+}
+#home .spotlight h1 span{
+	font-size: 100px;
+
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #fff;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+#home .spotlight a.soft{
+	scroll-behavior: smooth;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
+
+
+
+#wedo{
+	height: 100vh;
+	padding-top: 100px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0.75rem;
+	background-color: white;
+	width: 300px;
+	height: 370px;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+	0 2px 4px -2px rgba(0,0,0,.1);
+  }
+  
+  .header {
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border-radius: 0.75rem;
+	background-color: rgb(33 150 243);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+	height: 14rem;
+  }
+  
+  .info {
+	border: none;
+	padding: 1.5rem;
+	text-align: center;
+  }
+  
+  .title {
+	color: rgb(38 50 56);
+	letter-spacing: 0;
+	line-height: 1.375;
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+	padding: 0.75rem;
+	border: 1px solid rgb(236 239 241);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 140, 255, 0.082);
+  }
+  
+  .tag {
+	font-weight: 300;
+	font-size: .75rem;
+	display: block;
+  }
+  
+  .action {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	border: none;
+	outline: none;
+	box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+	color: rgb(255 255 255);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .75rem;
+	padding: 0.75rem 1.5rem;
+	background-color: rgb(33 150 243);
+	border-radius: 0.5rem;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gallery{
+	height: 100vh;
+}
+#contact{
+	height: 100vh;
+}
+
+
+@keyframes text {
+	0%{
+		color: #000;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+
+	}
+	
+}
+
+
+
+
+
+
+
+
